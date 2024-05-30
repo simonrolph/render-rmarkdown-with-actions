@@ -5,5 +5,9 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-Today's lucky number is `r round(runif(1)*1000000)`! Wow!
+```{r, include=FALSE}
+options(scipen = 999)
+```
+
+# Today's lucky number is `r round(runif(1)*10000)`! Wow!
 
