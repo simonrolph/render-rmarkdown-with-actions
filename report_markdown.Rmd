@@ -1,0 +1,13 @@
+---
+title: "Report"
+author: "Simon Rolph"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+```{r}
+
+print("hello world")
+```
+

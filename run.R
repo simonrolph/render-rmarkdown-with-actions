@@ -1,4 +1,11 @@
-print("Hello, World!")
 
+
+
+#create a file name
 file_name <- paste0("report_",Sys.Date(),".html")
-writeLines("Hello, World!", file_name)
+
+# generate the report
+print("Generating report")
+rmarkdown::render("report_markdown.Rmd",
+                  output_file = file_name,
+                  output_dir = "reports")
