@@ -26,11 +26,6 @@ jobs:
       
     - name: Set up renv
       uses: r-lib/actions/setup-renv@v2
-        
-    - name: Install dependencies
-      run: |
-        Rscript -e 'install.packages("remotes")'
-        Rscript -e 'remotes::install_cran("rmarkdown")'
 
     - name: Run run.R to generate new report
       run: |
