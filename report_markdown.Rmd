@@ -11,3 +11,5 @@ options(scipen = 999)
 
 ## Today's lucky number is `r round(runif(1)*10000)`! Wow!
 
+Generated at `r Sys.time()`
+
