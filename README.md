@@ -4,6 +4,8 @@
 
 Automating generating reports is useful tool. For example, I might want a webpage to list recent butterflies that were observed in a local nature reserve. You could run a scheduled job on your computer, but maybe you don't want to keep your computer turned on at all hours. Cloud based solutions like Posit Connect can help you do this by running R markdown files on a schedule (https://docs.posit.co/connect/user/scheduling/). Alternatively, we could be using GitHub actions! And we can use this in connection with GitHub pages to seamlessly be able to host the generated outputs.
 
+This repo provides a very simple demonstrator which generates a new lucky number every day which you can view here: https://simonrolph.github.io/render-rmarkdown-with-actions/ the page is generated at 00:01 of each day.
+
 ## How it works
 
 Using GitHub Actions we can automate the process of running an R script to trigger an Rmarkdown document to run to generate a report, and committing the newly created output back to the repository. This is then hosted on GitHub pages.
