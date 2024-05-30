@@ -1,12 +1,9 @@
 ---
-title: "Report"
+title: ""
 author: "Simon Rolph"
 date: "`r Sys.Date()`"
 output: html_document
 ---
 
-
-```{r}
-print("hello world")
-```
+Today's lucky number is `r round(runif(1)*1000000)`! Wow!
 
