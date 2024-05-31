@@ -58,6 +58,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
+    needs: run-r-script
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
